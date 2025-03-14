@@ -5,7 +5,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:task_management_app/common/utils/constants.dart';
 import 'package:task_management_app/common/widgets/reusable_text.dart';
 import 'package:task_management_app/common/widgets/width_spacer.dart';
-import '../../../common/widgets/appStyle.dart';
+import '../../../common/widgets/app_style.dart';
 
 import '../widgets/page_one.dart';
 import '../widgets/page_two.dart';
@@ -55,7 +55,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         child: Icon(
                           Ionicons.chevron_forward_circle,
                           size: 30,
-                          color: AppConst.colorScheme.onPrimary,
+                          color: AppConst.colorScheme.primary,
                         ),
                       ),
 
@@ -85,7 +85,8 @@ class _OnBoardingState extends State<OnBoarding> {
                       effect: SlideEffect(
                         dotHeight: 12,
                         dotWidth: 16,
-                        dotColor: Colors.blue,
+                        activeDotColor: AppConst.colorScheme.onPrimary,
+                        dotColor: AppConst.colorScheme.primary,
                       ),
                     ),
                   ),

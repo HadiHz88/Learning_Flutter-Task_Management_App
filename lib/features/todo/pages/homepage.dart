@@ -3,8 +3,7 @@ import 'package:task_management_app/common/utils/constants.dart';
 import 'package:task_management_app/common/widgets/reusable_text.dart';
 import 'package:task_management_app/common/widgets/width_spacer.dart';
 
-import '../../../common/widgets/appStyle.dart';
-import '../../../common/widgets/height_spacer.dart';
+import '../../../common/widgets/app_style.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

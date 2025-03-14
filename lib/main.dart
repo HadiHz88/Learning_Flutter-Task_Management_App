@@ -4,7 +4,6 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:task_management_app/common/utils/constants.dart';
 import 'package:task_management_app/features/onboarding/pages/onboarding.dart';
 
-import 'features/todo/pages/homepage.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
