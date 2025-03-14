@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:task_management_app/common/utils/constants.dart';
+import 'package:task_management_app/features/onboarding/pages/onboarding.dart';
 
 import 'features/todo/pages/homepage.dart';
 
@@ -21,7 +23,12 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Task Management Application',
           debugShowCheckedModeBanner: false,
-          home: const HomePage(),
+          theme: ThemeData(
+            scaffoldBackgroundColor: AppConst.colorScheme.shadow,
+            colorScheme: AppConst.colorScheme,
+            useMaterial3: true,
+          ),
+          home: const OnBoarding(),
         );
       },
     );

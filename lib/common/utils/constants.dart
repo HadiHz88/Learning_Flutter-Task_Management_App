@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppConst {
   AppConst._();
 
-  static ColorScheme colorScheme = ColorScheme.fromSeed(seedColor: Colors.blue);
+  static ColorScheme colorScheme = ColorScheme.fromSeed(seedColor: Colors.purpleAccent);
 
   static const Color red = Color(0xFFE57373);
 
