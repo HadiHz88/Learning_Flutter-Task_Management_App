@@ -6,6 +6,7 @@ import 'package:task_management_app/common/widgets/custom_outline_button.dart';
 import '../../../common/widgets/app_style.dart';
 import '../../../common/widgets/height_spacer.dart';
 import '../../../common/widgets/reusable_text.dart';
+import '../../auth/pages/login_page.dart';
 
 class PageTwo extends StatelessWidget {
   const PageTwo({super.key});
@@ -42,6 +43,12 @@ class PageTwo extends StatelessWidget {
               const HeightSpacer(customHeight: 50),
 
               CustomOutlineButton(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                  );
+                },
                 width: AppConst.width * 0.8,
                 height: AppConst.height * 0.06,
                 color: AppConst.colorScheme.primary,
